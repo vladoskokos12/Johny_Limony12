@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Таблица</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<h2>Таблица ред</h2>
+<div class="controls">
+    <button class="btn-add" onclick="addRow()">добавить строку</button>
+    <button class="btn-delete" onclick="deleteselectedRows()">Удалить выбранные строки</button>
+</div>
+<table id="editableTable">
+    <thead>
+        <tr>
+ <th><input type="checkbox" onclick="toggleALL(this)"></th>
+ <th>№</th>
+ <th>имя</th>
+ <th>фамилия</th>
+ <th>возраст</th>
+ <th>email</th>
+ <th>телефон</th>
+ <th>Город</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><input type="checkbox" class="Row-select"></td>
+            <td contenteditable="true">Имя</td>
+            <td contenteditable="true">Фамилия</td>
+            <td contenteditable="true">Возраст</td>
+            <td contenteditable="true">почта @example.com</td>
+            <td contenteditable="true">Номер телефона</td>
+            <td contenteditable="true">Город</td>
+        </tr>
+    </tbody>
+</table>
+<script src="style.js"></script>
+</body>
+</html>
